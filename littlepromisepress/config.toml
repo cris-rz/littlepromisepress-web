@@ -1,0 +1,52 @@
+baseURL = "/"
+title = "Little Promise Press"
+theme = "tella"
+defaultContentLanguage = "es"
+publishDir = "docs"
+enableRobotsTXT = true
+hasCJKLanguage = false
+
+[params]
+  description = "Editorial infantil STEM: ciencia divertida para mentes curiosas."
+  author = "Little Promise Press"
+
+[languages]
+  [languages.es]
+    languageName = "Español"
+    weight = 1
+
+    [languages.es.params]
+      mainMenuTitle = "Menú"
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+
+    [languages.en.params]
+      mainMenuTitle = "Menu"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Inicio"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "books"
+    name = "Libros"
+    url = "/libros/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre la editorial"
+    url = "/sobre/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contacto"
+    url = "/contacto/"
+    weight = 4
