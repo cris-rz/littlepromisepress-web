@@ -2,7 +2,7 @@ baseURL = "/"
 title = "Little Promise Press"
 theme = "tella"
 defaultContentLanguage = "es"
-publishDir = "docs"
+publishDir = "../docs"
 enableRobotsTXT = true
 hasCJKLanguage = false
 
