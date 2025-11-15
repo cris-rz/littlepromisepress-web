@@ -1,38 +1,34 @@
-<header>
-    <div id="overlay">
-        <ul class="text-center list-none text-white text-3xl">
-            {{ range .Site.Menus.main }}
-            <li class="p-2">
-                <a href="{{ .URL | safeURL }}">
-                    <span>{{ .Name }}</span>
-                </a>
-            </li>
-            {{ end }}
-        </ul>
-    </div>
-    <nav class="flex items-center justify-between flex-wrap bg-opacity-100 p-8">
-        <div class="flex items-center flex-shrink-0 text-xl text-grey-900 mr-6">
-            <a href="{{ .Site.BaseURL }}"><img alt="{{ .Site.Params.logo.alt }}"
-                    class="{{ .Site.Params.logo.size }} mr-3" src="{{ .Site.Params.logo.main | relURL }}"></a>
-        </div>
-        <div class="block lg:hidden">
-            <div id="hamburgerbtn" class="flex cursor-pointer items-center w-14 h-10 py-2 rounded mopen">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
-        </div>
-        <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="mobileMenu">
-            <div class="text-lg lg:flex-grow">
-            </div>
-            <div class="text-lg">
-                {{ range .Site.Menus.main }}
-                <a href="{{ .URL | safeURL }}"
-                    class="duration-200 block mt-4 lg:inline-block lg:mt-0 text-black hover:opacity-60 mr-8">
-                    {{ .Name }}
-                </a>
-                {{ end }}
-            </div>
-        </div>
+<header class="w-full py-4 border-b border-gray-200">
+  <div class="max-w-5xl mx-auto px-4 flex items-center justify-between gap-4">
+    <!-- Logo / Nombre de la editorial -->
+    <a href="{{ if eq .Site.Language.Lang `en` }}/en/{{ else }}/{{ end }}" class="text-lg font-semibold">
+      Little Promise Press
+    </a>
+
+    <!-- Navegación principal (ajusta rutas si cambian tus secciones) -->
+    <nav class="hidden md:flex gap-4 text-sm">
+      {{ if eq .Site.Language.Lang "es" }}
+        <a href="/libros/" class="hover:underline">Libros</a>
+        <a href="/sobre/" class="hover:underline">Sobre la editorial</a>
+        <a href="/contacto/" class="hover:underline">Contacto</a>
+      {{ else }}
+        <a href="/en/books/" class="hover:underline">Books</a>
+        <a href="/en/about/" class="hover:underline">About</a>
+        <a href="/en/contact/" class="hover:underline">Contact</a>
+      {{ end }}
     </nav>
+
+    <!-- Selector de idioma -->
+    <div class="flex items-center gap-2 text-sm">
+      <a href="/"
+         class="px-2 py-1 rounded {{ if eq .Site.Language.Lang `es` }}font-semibold underline{{ end }}">
+        ES
+      </a>
+      <span>|</span>
+      <a href="/en/"
+         class="px-2 py-1 rounded {{ if eq .Site.Language.Lang `en` }}font-semibold underline{{ end }}">
+        EN
+      </a>
+    </div>
+  </div>
 </header>

@@ -1,67 +1,44 @@
-<footer class="bg-tlgray-100">
-  {{ if not .IsHome }}
-  <script src='{{ "/js/clipboard.min.js" | relURL }}'></script>
-  <script src='{{ "/js/highlight.min.js" | relURL }}'></script>
-  <script src='{{ "/js/highlightjs-line-numbers.min.js" | relURL }}'></script>
-  <script src='{{ "/js/sweetalert2.min.js" | relURL }}'></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
-    new ClipboardJS('.url');
+<footer class="w-full py-8 mt-12 text-center text-sm text-gray-500 border-t border-gray-200">
+  <div class="max-w-5xl mx-auto px-4 space-y-3">
 
-    function OnClickURL() {
-      Swal.fire({
-        icon: 'success',
-        title: 'Copied!',
-        text: 'Copied the URL and title.'
-      })
-    }
-  </script>
-  {{ end }}
-  <script>
-    function toggleNav() {
-      var hamburger = document.getElementById("hamburgerbtn");
-      var overlay = document.getElementById("overlay");
-      var body = document.body;
+    <!-- Copyright + links legales según idioma -->
+    {{ if eq .Site.Language.Lang "es" }}
 
-      hamburger.addEventListener("click", function () {
-        overlay.classList.toggle("open");
-        hamburger.classList.toggle("is-open");
-        body.classList.toggle("scroll-lock");
-      });
-    }
-    toggleNav();
+      <p>© {{ now.Format "2006" }} Little Promise Press · Todos los derechos reservados</p>
 
-    document.querySelector('.scroll-top').addEventListener('click', () => {
-      document.documentElement.scrollTop = 0;
-    });
-  </script>
-  {{ if .Site.Params.googleFonts }}
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
-  {{ else }}
-  <link href='{{ "css/webfonts.min.css" | relURL }}' rel="stylesheet" />
-  {{ end }}
-  <div class="flex items-center justify-between flex-wrap bg-gray-800 p-8 text-white">
-    <div class="items-center text-xl text-grey-900 mr-6">
-      {{ .Site.Params.site.name }}
+      <nav class="space-x-4">
+        <a href="/aviso-legal/" class="hover:underline">Aviso legal</a>
+        <a href="/politica-privacidad/" class="hover:underline">Política de privacidad</a>
+        <a href="/politica-cookies/" class="hover:underline">Política de cookies</a>
+      </nav>
+
+    {{ else if eq .Site.Language.Lang "en" }}
+
+      <p>© {{ now.Format "2006" }} Little Promise Press · All rights reserved</p>
+
+      <nav class="space-x-4">
+        <a href="/en/legal-notice/" class="hover:underline">Legal notice</a>
+        <a href="/en/privacy-policy/" class="hover:underline">Privacy policy</a>
+        <a href="/en/cookies-policy/" class="hover:underline">Cookies policy</a>
+      </nav>
+
+    {{ end }}
+
+    <!-- Redes sociales (mismas en ambos idiomas) -->
+    <div class="mt-2 space-x-4">
+      <a href="https://instagram.com/littlepromisepress" target="_blank" rel="noopener" class="hover:underline">
+        📸 Instagram
+      </a>
+      <a href="https://www.tiktok.com/@littlepromisepress" target="_blank" rel="noopener" class="hover:underline">
+        🎵 TikTok
+      </a>
+      <a href="https://www.pinterest.com/littlepromisepress" target="_blank" rel="noopener" class="hover:underline">
+        📌 Pinterest
+      </a>
+      <a href="mailto:contacto@littlepromisepress.com" class="hover:underline">
+        ✉️ Email
+      </a>
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="mobileMenu">
-      <div class="text-lg lg:flex-grow">
-      </div>
-      <div class="flex flex-row items-center text-lg">
-        {{ range .Site.Menus.footer }}
-        <a href="{{ .URL }}" class="block mt-4 lg:inline-block lg:mt-0 text-gray-300 hover:text-white mr-8">
-          {{ if not .Pre }}
-          {{ .Name }}
-          {{ else }}
-          {{ .Pre }}
-          {{ end }}
-        </a>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-  <div class="copy pl-8 py-5 bg-tlgray-700 text-white text-md">
-    &copy; {{site.Title}} {{ now.Year }} All Rights Reserved.
+
   </div>
 </footer>
