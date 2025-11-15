@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <h1 class="text-3xl font-bold text-gray-900 mb-8">
+      Nuestros libros
+    </h1>
+
+    <div class="space-y-10">
+
+      {{ partial "book-card.html" (dict
+        "cover" "/img/portada-es.png"
+        "title" "Ciencia Divertida para Mentes Curiosas"
+        "subtitle" "30 experimentos STEM para aprender jugando"
+        "description" "Un libro con 30 experimentos sencillos usando materiales cotidianos para aprender ciencia mientras juegan."
+        "bullets" (slice
+          "Explicaciones claras pensadas para niños"
+          "Guía para la persona adulta que acompaña"
+          "Consejos de seguridad en cada actividad"
+        )
+        "link" "https://amzn.eu/d/gOPhgRc"
+        "linkLabel" "Comprar en Amazon"
+      ) }}
+
+      {{ partial "book-card.html" (dict
+        "cover" "/img/portada-en.png"
+        "title" "Curious Minds: Fun Science Experiments"
+        "subtitle" "English edition – 30 STEM experiments"
+        "description" "Versión en inglés del libro, ideal para practicar el idioma mientras se experimenta."
+        "bullets" (slice
+          "Ages 6–10"
+          "Perfect for bilingual families and schools"
+        )
+        "link" "https://amzn.eu/d/8gOAr6d"
+        "linkLabel" "Buy on Amazon"
+      ) }}
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

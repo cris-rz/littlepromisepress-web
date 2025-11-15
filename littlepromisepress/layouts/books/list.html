@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <h1 class="text-3xl font-bold text-gray-900 mb-8">
+      Our books
+    </h1>
+
+    <div class="space-y-10">
+
+      {{ partial "book-card.html" (dict
+        "cover" "/img/portada-en.png"
+        "title" "Curious Minds: Fun Science Experiments"
+        "subtitle" "30 STEM experiments to learn while having fun"
+        "description" "A collection of 30 simple experiments using everyday materials to explore physics, chemistry and biology through play."
+        "bullets" (slice
+          "Recommended age: 6–10"
+          "Perfect for families and primary classrooms"
+        )
+        "link" "https://amzn.eu/d/8gOAr6d"
+        "linkLabel" "View on Amazon"
+      ) }}
+
+      {{ partial "book-card.html" (dict
+        "cover" "/img/portada-es.png"
+        "title" "Fun Science for Curious Minds (Spanish edition)"
+        "subtitle" "30 experiments in Spanish"
+        "description" "Spanish edition, ideal for bilingual families and Spanish-speaking schools."
+        "bullets" (slice
+          "Edades 6–10"
+          "Ideal para familias y aulas de Primaria"
+        )
+        "link" "https://amzn.eu/d/gOPhgRc"
+        "linkLabel" "Ver en Amazon"
+      ) }}
+
+    </div>
+  </div>
+</section>
+
+{{ end }}
