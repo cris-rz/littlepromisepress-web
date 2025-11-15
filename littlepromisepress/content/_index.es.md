@@ -26,7 +26,7 @@ de niñas y niños de 6 a 12 años, con actividades sencillas que se pueden hace
 
 ### Curious Minds: Fun Science Experiments
 
-La versión en inglés, perfecta para familias bilingües y centros educativos que trabajan en inglés.
+La versión en inglés es perfecta para familias bilingües y centros educativos que trabajan en inglés.
 
 [Buy on Amazon](https://amzn.eu/d/8gOAr6d)
 
