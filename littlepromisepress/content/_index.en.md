@@ -1,6 +1,8 @@
 ---
-title: "Little Promise Press"
+title: "STEM science books for kids | Little Promise Press"
+description: "Children’s STEM publisher creating fun science experiment books for curious kids aged 6–10."
 ---
+
 
 # Little Promise Press
 

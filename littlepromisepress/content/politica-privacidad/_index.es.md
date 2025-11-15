@@ -2,6 +2,7 @@
 title: "Política de privacidad"
 slug: "politica-privacidad"
 description: "Política de privacidad de Little Promise Press"
+layout: "page"    # o "single", según cómo se llamen tus plantillas
 ---
 
 En **Little Promise Press** respetamos tu privacidad y tratamos únicamente los datos estrictamente necesarios.

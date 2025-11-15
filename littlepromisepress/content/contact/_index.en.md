@@ -1,6 +1,8 @@
 ---
-title: "Contact"
+title: "Contact | Little Promise Press"
+description: "Get in touch with Little Promise Press for collaborations, reviews or using our science books in the classroom."
 ---
+
 
 # Contact
 

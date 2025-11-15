@@ -1,5 +1,6 @@
 ---
-title: "About"
+title: "About Little Promise Press"
+description: "Little Promise Press is an independent children’s publisher focused on STEM and science books for kids aged 6–10."
 ---
 
 # About Little Promise Press

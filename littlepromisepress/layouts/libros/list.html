@@ -1,41 +1,50 @@
 {{ define "main" }}
 
-<section class="py-16 bg-white">
-  <div class="max-w-5xl mx-auto px-6">
-    <h1 class="text-3xl font-bold text-gray-900 mb-8">
-      Nuestros libros
+<section class="bg-blue-100 py-12">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <p class="text-sm font-semibold text-blue-800 uppercase tracking-wide">
+      Nuestro catálogo
+    </p>
+    <h1 class="mt-3 text-3xl md:text-4xl font-bold text-gray-900">
+      Libros de ciencia divertida para mentes curiosas
     </h1>
+    <p class="mt-4 text-gray-800 max-w-2xl mx-auto">
+      Descubre los libros de Little Promise Press, con experimentos STEM sencillos
+      para aprender ciencia jugando en casa o en el aula.
+    </p>
+  </div>
+</section>
 
-    <div class="space-y-10">
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6 space-y-10">
 
-      {{ partial "book-card.html" (dict
-        "cover" "/img/portada-es.png"
-        "title" "Ciencia Divertida para Mentes Curiosas"
-        "subtitle" "30 experimentos STEM para aprender jugando"
-        "description" "Un libro con 30 experimentos sencillos usando materiales cotidianos para aprender ciencia mientras juegan."
-        "bullets" (slice
-          "Explicaciones claras pensadas para niños"
-          "Guía para la persona adulta que acompaña"
-          "Consejos de seguridad en cada actividad"
-        )
-        "link" "https://amzn.eu/d/gOPhgRc"
-        "linkLabel" "Comprar en Amazon"
-      ) }}
+    {{ partial "book-card.html" (dict
+      "cover" "/img/portada-es.png"
+      "title" "Ciencia Divertida para Mentes Curiosas"
+      "subtitle" "30 experimentos STEM para aprender jugando"
+      "description" "Un libro con 30 experimentos sencillos usando materiales cotidianos para aprender ciencia mientras juegan."
+      "bullets" (slice
+        "Explicaciones claras pensadas para niños"
+        "Guía para la persona adulta que acompaña"
+        "Consejos de seguridad en cada actividad"
+      )
+      "link" "https://amzn.eu/d/gOPhgRc"
+      "linkLabel" "Comprar en Amazon"
+    ) }}
 
-      {{ partial "book-card.html" (dict
-        "cover" "/img/portada-en.png"
-        "title" "Curious Minds: Fun Science Experiments"
-        "subtitle" "English edition – 30 STEM experiments"
-        "description" "Versión en inglés del libro, ideal para practicar el idioma mientras se experimenta."
-        "bullets" (slice
-          "Ages 6–10"
-          "Perfect for bilingual families and schools"
-        )
-        "link" "https://amzn.eu/d/8gOAr6d"
-        "linkLabel" "Buy on Amazon"
-      ) }}
+    {{ partial "book-card.html" (dict
+      "cover" "/img/portada-en.png"
+      "title" "Curious Minds: Fun Science Experiments"
+      "subtitle" "English edition – 30 STEM experiments"
+      "description" "Versión en inglés del libro, ideal para practicar el idioma mientras se experimenta."
+      "bullets" (slice
+        "Ages 6–10"
+        "Perfect for bilingual families and schools"
+      )
+      "link" "https://amzn.eu/d/8gOAr6d"
+      "linkLabel" "Buy on Amazon"
+    ) }}
 
-    </div>
   </div>
 </section>
 

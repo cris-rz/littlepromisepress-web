@@ -1,6 +1,8 @@
 ---
-title: "Little Promise Press"
+title: "Libros infantiles de ciencia | Little Promise Press"
+description: "Editorial infantil STEM que crea libros de experimentos sencillos para que niñas y niños de 6 a 10 años aprendan ciencia jugando."
 ---
+
 
 # Little Promise Press
 
