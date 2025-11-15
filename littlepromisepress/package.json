@@ -10,7 +10,7 @@
     "start": "concurrently npm:watch:*",
     "watch:tw": "tailwindcss -i ./themes/tella/assets/css/main.css -o ./themes/tella/assets/css/style.css --watch",
     "watch:hugo": "hugo server",
-    "build": "npx postcss -c ./postcss.config.js -o ./themes/tella/assets/css/style.css ./themes/tella/assets/css/main.css && hugo --minify"
+    "build": "npx postcss ./themes/tella/assets/css/main.css -c ./postcss.config.js -o ./themes/tella/assets/css/style.css && hugo --minify"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.12",
