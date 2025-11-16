@@ -1,36 +1,57 @@
-<head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
-  <title>
-    {{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
-  </title>
+<title>
+  {{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
+</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {{ with .Description }}
+{{ with .Description }}
+  <meta name="description" content="{{ . }}">
+{{ else }}
+  {{ with .Site.Params.description }}
     <meta name="description" content="{{ . }}">
-  {{ else }}
-    {{ with .Site.Params.description }}
-      <meta name="description" content="{{ . }}">
-    {{ end }}
   {{ end }}
+{{ end }}
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+{{ with .Site.Params.author }}
+  <meta name="author" content="{{ . }}">
+{{ end }}
 
-  <!-- Open Graph básico -->
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
-  {{ with .Description }}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="{{ .Site.Title }}">
+<meta name="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+
+{{ with .Description }}
+  <meta name="twitter:description" content="{{ . }}">
+{{ else }}
+  {{ with .Site.Params.description }}
+    <meta name="twitter:description" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
+{{ $image := (index .Site.Params.images 0) }}
+{{ with $image }}
+  <meta name="twitter:image" content="{{ . | relURL }}">
+{{ end }}
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+{{ with .Description }}
+  <meta property="og:description" content="{{ . }}">
+{{ else }}
+  {{ with .Site.Params.description }}
     <meta property="og:description" content="{{ . }}">
-  {{ else }}
-    {{ with .Site.Params.description }}
-      <meta property="og:description" content="{{ . }}">
-    {{ end }}
   {{ end }}
+{{ end }}
 
-  {{ $image := (index .Site.Params.images 0) }}
-  {{ with $image }}
-    <meta property="og:image" content="{{ . | relURL }}">
-  {{ end }}
-</head>
+{{ with $image }}
+  <meta property="og:image" content="{{ . | relURL }}">
+{{ end }}
+
+{{/* CSS principal generado con Tailwind */}}
+{{ $styles := resources.Get "css/style.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
