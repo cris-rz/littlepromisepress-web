@@ -53,5 +53,6 @@
 {{ end }}
 
 {{/* CSS principal generado con Tailwind */}}
+
 {{ $styles := resources.Get "css/style.css" | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
