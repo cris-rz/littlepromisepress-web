@@ -1,0 +1,88 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="bg-blue-300 py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <p class="text-sm font-semibold text-blue-900 uppercase tracking-wide">
+      Children’s STEM publisher
+    </p>
+
+    <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-white">
+      Fun science for curious minds
+    </h1>
+
+    <p class="mt-6 text-lg text-blue-50 max-w-2xl mx-auto">
+      Simple, playful STEM experiment books for kids aged 6–10,
+  available in Spanish and English.
+    </p>
+
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="/books/"
+         class="px-6 py-3 rounded-full bg-white text-blue-700 font-semibold shadow">
+        Explore books
+      </a>
+
+      <a href="/about/"
+         class="px-6 py-3 rounded-full border border-white text-white bg-blue-400 font-semibold shadow">
+        About us
+      </a>
+    </div>
+
+    <p class="mt-4 text-sm text-blue-900">
+      ¿Prefieres leer en inglés?
+      <a href="/en/" class="underline font-semibold">
+        View this page in English
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- LIBROS DESTACADOS -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+    {{ partial "book-card.html" (dict
+      "cover" "/img/portada-es.png"
+      "title" "Ciencia Divertida para Mentes Curiosas"
+      "subtitle" "30 experimentos STEM para aprender jugando"
+      "description" "Experimentos fáciles y seguros con materiales cotidianos para descubrir física, química y biología jugando."
+      "bullets" (slice
+        "Edad recomendada: 6–10 años"
+        "Ideal para familias y aulas de Primaria"
+      )
+      "link" "https://amzn.eu/d/gOPhgRc"
+      "linkLabel" "Comprar en Amazon"
+    ) }}
+
+    {{ partial "book-card.html" (dict
+      "cover" "/img/portada-en.png"
+      "title" "Curious Minds: Fun Science Experiments"
+      "subtitle" "30 STEM experiments to learn while having fun"
+      "description" "English edition with the same 30 fun experiments, perfect for bilingual families and schools."
+      "bullets" (slice
+        "Ages 6–10"
+        "Great for CLIL and English classrooms"
+      )
+      "link" "https://amzn.eu/d/8gOAr6d"
+      "linkLabel" "Buy on Amazon"
+    ) }}
+
+  </div>
+</section>
+
+<!-- VISIÓN -->
+<section class="py-16 bg-blue-100">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-900">
+      Books to learn together
+    </h2>
+
+    <p class="mt-4 text-gray-800">
+      Our books are designed so that children can experiment alongside a grown-up,
+  with clear explanations and simple step-by-step instructions.
+  We want every activity to become a shared moment to learn, laugh and discover together.
+    </p>
+  </div>
+</section>
+
+{{ end }}
