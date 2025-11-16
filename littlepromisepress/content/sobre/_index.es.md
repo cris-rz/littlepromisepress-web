@@ -6,8 +6,6 @@ description: "Little Promise Press es una editorial infantil independiente espec
 ---
 
 
-# Sobre Little Promise Press
-
 Little Promise Press es una pequeña editorial independiente dedicada a crear
 libros infantiles de ciencia y STEM.
 

@@ -5,7 +5,6 @@ section_subtitle: "Little Promise Press is an independent children’s publisher
 description: "Little Promise Press is an independent children’s publisher focused on STEM and science books for kids aged 6–10."
 ---
 
-# About Little Promise Press
 
 Little Promise Press is a small independent publisher focused on
 science and STEM books for children.

@@ -6,7 +6,6 @@ description: "Get in touch with Little Promise Press for collaborations, reviews
 ---
 
 
-# Contact
 
 For collaboration proposals, questions about our books
 or classroom usage, feel free to write to:
