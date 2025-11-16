@@ -9,7 +9,7 @@ description: "Ponte en contacto con Little Promise Press para colaboraciones, re
 Si quieres proponernos una colaboración, comentar nuestros libros
 o preguntar por usos en el aula, puedes escribirnos a:
 
-- 📧 **info@littlepromisepress.com**  *(cámbialo por tu correo real)*
+- 📧 **contacto@littlepromisepress.com**
 
 También puedes añadir aquí un formulario usando el servicio que prefieras
 (Netlify Forms, Formspree, etc.).
