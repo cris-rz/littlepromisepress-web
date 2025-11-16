@@ -1,9 +1,16 @@
 ---
-title: "Science experiment books for kids | Little Promise Press"
-section_tagline: "Our catalog"
-section_subtitle: "Explore Little Promise Press children’s science books, with 30 easy and safe STEM experiments for home and classroom."
-description: "Explore Little Promise Press children’s science books, with 30 easy and safe STEM experiments for home and classroom."
+title: "STEM Books & Science Experiment Books for Kids | Ages 6–10 | Little Promise Press"
+description: "Discover our STEM books for kids with fun, hands-on science experiments. Perfect for ages 6–10, families, teachers, and bilingual English–Spanish learning."
+keywords:
+  - STEM books for kids
+  - science experiment book
+  - STEM for elementary school
+  - science activities for kids
+  - easy science experiments
+slug: "books"
+draft: false
 ---
+
 
 # Our books
 

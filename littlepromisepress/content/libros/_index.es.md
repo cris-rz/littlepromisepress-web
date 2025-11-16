@@ -1,8 +1,16 @@
 ---
-title: "Libros de ciencia para niños | Little Promise Press"
+title: "Libros de ciencia para niños 6-10 años | Libros STEM infantiles | Little Promise Press"
 section_tagline: "Nuestro catálogo"
 section_subtitle: "Descubre los libros de Little Promise Press, con experimentos STEM sencillos para aprender ciencia jugando en casa o en el aula."
-description: "Descubre los libros de ciencia de Little Promise Press, con 30 experimentos STEM fáciles y seguros para aprender jugando en familia o en el aula."
+description: "Descubre los libros de ciencia de Little Promise Press: experimentos STEM fáciles y seguros para niños de 6-10 años. Perfectos para familias, aulas de Primaria y aprendizaje bilingüe."
+keywords:
+  - libros STEM
+  - ciencia para niños
+  - experimentos infantiles
+  - libros educativos para niños
+  - STEM en español
+slug: "libros"
+draft: false
 ---
 
 # Nuestros libros

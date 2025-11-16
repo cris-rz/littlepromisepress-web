@@ -1,6 +1,14 @@
 ---
-title: "STEM science books for kids | Little Promise Press"
-description: "Children’s STEM publisher creating fun science experiment books for curious kids aged 6–10."
+title: "STEM Books for Kids Ages 6–10 | Fun Science Experiments | Little Promise Press"
+description: "STEM books for kids ages 6–10 with easy and safe science experiments to do at home or in the classroom. Bilingual English–Spanish educational books to learn science while having fun."
+keywords:
+  - STEM books for kids
+  - science experiments for kids
+  - easy STEM activities
+  - science for children
+  - STEM education
+slug: ""
+draft: false
 ---
 
 

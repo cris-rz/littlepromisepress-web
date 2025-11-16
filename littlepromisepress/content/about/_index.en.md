@@ -1,8 +1,14 @@
 ---
-title: "About Little Promise Press"
-section_tagline: "About us"
-section_subtitle: "Little Promise Press is an independent children’s publisher focused on STEM and science books for kids aged 6–10."
-description: "Little Promise Press is an independent children’s publisher focused on STEM and science books for kids aged 6–10."
+title: "About Little Promise Press | STEM Children's Book Publisher"
+description: "Little Promise Press is an independent children's STEM book publisher creating fun and educational science books for kids ages 6–10 in English and Spanish. Learn more about our mission and story."
+keywords:
+  - STEM publisher
+  - children's STEM books
+  - science books for kids
+  - bilingual educational books
+  - STEM education for children
+slug: "about"
+draft: false
 ---
 
 
