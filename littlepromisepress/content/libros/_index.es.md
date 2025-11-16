@@ -1,5 +1,7 @@
 ---
 title: "Libros de ciencia para niños | Little Promise Press"
+section_tagline: "Nuestro catálogo"
+section_subtitle: "Descubre los libros de Little Promise Press, con experimentos STEM sencillos para aprender ciencia jugando en casa o en el aula."
 description: "Descubre los libros de ciencia de Little Promise Press, con 30 experimentos STEM fáciles y seguros para aprender jugando en familia o en el aula."
 ---
 

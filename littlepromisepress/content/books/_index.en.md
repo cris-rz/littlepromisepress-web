@@ -1,5 +1,7 @@
 ---
 title: "Science experiment books for kids | Little Promise Press"
+section_tagline: "Our catalog"
+section_subtitle: "Explore Little Promise Press children’s science books, with 30 easy and safe STEM experiments for home and classroom."
 description: "Explore Little Promise Press children’s science books, with 30 easy and safe STEM experiments for home and classroom."
 ---
 

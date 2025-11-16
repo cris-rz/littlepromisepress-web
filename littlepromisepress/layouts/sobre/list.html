@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="bg-blue-100 py-16 text-center">
+  <p class="text-sm font-semibold text-blue-900 uppercase tracking-wide">
+    Sobre Little Promise Press
+  </p>
+
+  <h1 class="mt-4 text-3xl md:text-5xl font-extrabold text-blue-900">
+    {{ .Title }}
+  </h1>
+</section>
+
+<!-- CONTENT -->
+<div class="mx-auto my-10 max-w-5xl">
+  <div class="mx-3 px-2">
+    <div class="prose md:prose-lg lg:prose-xl max-w-none py-1">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ end }}

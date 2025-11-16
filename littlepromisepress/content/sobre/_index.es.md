@@ -1,5 +1,7 @@
 ---
 title: "Sobre Little Promise Press"
+section_tagline: "Quiénes somos"
+section-subtitle: "Little Promise Press es una editorial infantil independiente especializada en libros de ciencia y STEM para niñas y niños de 6 a 10 años."
 description: "Little Promise Press es una editorial infantil independiente especializada en libros de ciencia y STEM para niñas y niños de 6 a 10 años."
 ---
 

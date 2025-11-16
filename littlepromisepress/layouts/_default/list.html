@@ -32,15 +32,16 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="mx-auto my-10 max-w-5xl">
-  <div class="mx-3 px-2">
-    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6">
-      {{ .Title }}
-    </h1>
 
-    <div class="prose md:prose-lg lg:prose-xl max-w-none py-1">
-      {{ .Content }}
+  {{ partial "section-header.html" . }}
+
+  <div class="mx-auto my-10 max-w-5xl">
+    <div class="mx-3 px-2">
+      <div class="prose md:prose-lg lg:prose-xl max-w-none py-1">
+        {{ .Content }}
+      </div>
     </div>
   </div>
-</div>
+
 {{ end }}
+
