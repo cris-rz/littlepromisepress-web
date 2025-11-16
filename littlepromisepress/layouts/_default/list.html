@@ -32,17 +32,15 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="mx-auto my-10 max-w-6xl">
-  <div class="mx-3 col-span-3 lg:col-span-2 px-2">
-    <h1 class="title text-5xl mb-4">{{.Title}}</h1>
-    <div class="content py-1">{{.Content}}</div>
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "in" site.Params.mainSections) 6 }}
-    {{ range $paginator.Pages }}
-    <a href="{{ .Permalink }}">
-      <div>{{ partial "summary.html" . }}</div>
-    </a>
-    {{ end }}
+<div class="mx-auto my-10 max-w-5xl">
+  <div class="mx-3 px-2">
+    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6">
+      {{ .Title }}
+    </h1>
+
+    <div class="prose md:prose-lg lg:prose-xl max-w-none py-1">
+      {{ .Content }}
+    </div>
   </div>
-  {{ partial "paginator.html" . }}
 </div>
 {{ end }}
