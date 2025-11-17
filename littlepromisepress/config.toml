@@ -2,6 +2,7 @@ baseURL = "https://littlepromisepress.com/"
 title = "Little Promise Press"
 theme = "tella"
 defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = true
 publishDir = "../docs"
 enableRobotsTXT = true
 hasCJKLanguage = false
@@ -13,8 +14,10 @@ hasCJKLanguage = false
 
 [languages]
   [languages.es]
+    contentDir = "content/es"
     languageName = "Español"
     weight = 1
+    title = "Little Promise Press"
     description = "Editorial infantil STEM que crea libros de experimentos sencillos para aprender ciencia jugando."
 
 
@@ -22,9 +25,11 @@ hasCJKLanguage = false
       mainMenuTitle = "Menú"
 
   [languages.en]
+    contentDir = "content/en"
     languageName = "English"
-    description = "Children’s STEM publisher creating fun science experiment books for curious kids aged 6–10."
     weight = 2
+    title = "Little Promise Press"
+    description = "Children’s STEM publisher creating fun science experiment books for curious kids aged 6–10."
 
     [languages.en.params]
       mainMenuTitle = "Menu"
