@@ -1,15 +1,9 @@
 baseURL = "https://littlepromisepress.com/"
 title = "Little Promise Press"
 theme = "tella"
-
-# --- Idioma por defecto ---
 defaultContentLanguage = "es"
 defaultContentLanguageInSubdir = true
-
-# --- Salida para GitHub Pages ---
 publishDir = "../docs"
-
-# --- General ---
 enableRobotsTXT = true
 hasCJKLanguage = false
 
@@ -18,17 +12,14 @@ hasCJKLanguage = false
   description = "Editorial infantil STEM con libros de ciencia divertida para niñas y niños de 6 a 10 años."
   images = ["/img/portada-es.png"]
 
-# ============================
-#   IDIOMAS
-# ============================
 [languages]
-
   [languages.es]
     contentDir = "content/es"
     languageName = "Español"
     weight = 1
     title = "Little Promise Press"
     description = "Editorial infantil STEM que crea libros de experimentos sencillos para aprender ciencia jugando."
+
 
     [languages.es.params]
       mainMenuTitle = "Menú"
@@ -43,9 +34,6 @@ hasCJKLanguage = false
     [languages.en.params]
       mainMenuTitle = "Menu"
 
-# ============================
-#   MENÚ PRINCIPAL
-# ============================
 [menu]
 
   [[menu.main]]
