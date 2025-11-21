@@ -45,17 +45,17 @@ hasCJKLanguage = false
   [[menu.main]]
     identifier = "books"
     name = "Libros"
-    url = "/libros/"
+    url = "libros/"
     weight = 2
 
   [[menu.main]]
     identifier = "about"
     name = "Sobre la editorial"
-    url = "/sobre/"
+    url = "sobre/"
     weight = 3
 
   [[menu.main]]
     identifier = "contact"
     name = "Contacto"
-    url = "/contacto/"
+    url = "contacto/"
     weight = 4
