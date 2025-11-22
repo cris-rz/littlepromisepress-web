@@ -5,7 +5,6 @@ defaultContentLanguage = "es"
 defaultContentLanguageInSubdir = true
 publishDir = "../docs"
 enableRobotsTXT = true
-hasCJKLanguage = false
 
 [params]
   author = "Little Promise Press"
@@ -13,12 +12,13 @@ hasCJKLanguage = false
   images = ["/img/portada-es.png"]
 
 [languages]
-
   [languages.es]
-    contentDir = "content/es"
     languageName = "Español"
     weight = 1
     title = "Little Promise Press"
+    description = "Editorial infantil STEM que crea libros de experimentos sencillos para aprender ciencia jugando."
+    [languages.es.params]
+      mainMenuTitle = "Menú"
 
     [languages.es.menu]
       [[languages.es.menu.main]]
@@ -47,10 +47,12 @@ hasCJKLanguage = false
 
 
   [languages.en]
-    contentDir = "content/en"
     languageName = "English"
     weight = 2
     title = "Little Promise Press"
+    description = "Children’s STEM publisher creating fun science experiment books for curious kids aged 6–10."
+    [languages.en.params]
+      mainMenuTitle = "Menu"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -76,4 +78,3 @@ hasCJKLanguage = false
         name = "Contact"
         url = "/en/contact/"
         weight = 4
-
