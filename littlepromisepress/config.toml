@@ -1,4 +1,4 @@
-baseURL = "https://littlepromisepress.com/"
+baseURL = "https://www.littlepromisepress.com/"
 title = "Little Promise Press"
 theme = "tella"
 defaultContentLanguage = "es"
@@ -13,49 +13,67 @@ hasCJKLanguage = false
   images = ["/img/portada-es.png"]
 
 [languages]
+
   [languages.es]
     contentDir = "content/es"
     languageName = "Español"
     weight = 1
     title = "Little Promise Press"
-    description = "Editorial infantil STEM que crea libros de experimentos sencillos para aprender ciencia jugando."
 
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        identifier = "home"
+        name = "Inicio"
+        url = "/es/"
+        weight = 1
 
-    [languages.es.params]
-      mainMenuTitle = "Menú"
+      [[languages.es.menu.main]]
+        identifier = "books"
+        name = "Libros"
+        url = "/es/libros/"
+        weight = 2
+
+      [[languages.es.menu.main]]
+        identifier = "about"
+        name = "Sobre la editorial"
+        url = "/es/sobre/"
+        weight = 3
+
+      [[languages.es.menu.main]]
+        identifier = "contact"
+        name = "Contacto"
+        url = "/es/contacto/"
+        weight = 4
+
 
   [languages.en]
     contentDir = "content/en"
     languageName = "English"
     weight = 2
     title = "Little Promise Press"
-    description = "Children’s STEM publisher creating fun science experiment books for curious kids aged 6–10."
 
-    [languages.en.params]
-      mainMenuTitle = "Menu"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/en/"
+        weight = 1
 
-[menu]
+      [[languages.en.menu.main]]
+        identifier = "books"
+        name = "Books"
+        url = "/en/books/"
+        weight = 2
 
-  [[menu.main]]
-    identifier = "home"
-    name = "Inicio"
-    url = "/"
-    weight = 1
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/en/about/"
+        weight = 3
 
-  [[menu.main]]
-    identifier = "books"
-    name = "Libros"
-    url = "libros/"
-    weight = 2
+      [[languages.en.menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/en/contact/"
+        weight = 4
 
-  [[menu.main]]
-    identifier = "about"
-    name = "Sobre la editorial"
-    url = "sobre/"
-    weight = 3
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contacto"
-    url = "contacto/"
-    weight = 4
