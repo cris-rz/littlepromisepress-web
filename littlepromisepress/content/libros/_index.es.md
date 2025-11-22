@@ -24,7 +24,7 @@ para aprender ciencia mientras juegan.
 - Guias para la persona adulta que acompaña
 - Consejos de seguridad en cada actividad
 
-[Ver en Amazon](https://amzn.eu/d/gOPhgRc)
+[Ver en Amazon](https://amzn.to/48vt9fW)
 
 ---
 

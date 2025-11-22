@@ -12,5 +12,3 @@ or classroom usage, feel free to write to:
 
 - 📧 **contacto@littlepromisepress.com**
 
-You can also add a contact form here using your preferred service
-(Netlify Forms, Formspree, etc.).
