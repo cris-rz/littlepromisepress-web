@@ -78,3 +78,7 @@ enableRobotsTXT = true
         name = "Contact"
         url = "/en/contact/"
         weight = 4
+
+[services]
+  [services.googleAnalytics]
+    id="GTM-NQQFH58X"
