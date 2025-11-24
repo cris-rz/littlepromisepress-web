@@ -1,13 +1,8 @@
-{{ if not hugo.IsServer }}
-{{ with .Site.Config.Services.GoogleAnalytics.ID }}
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TU_ID_REAL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', '{{ . }}');
+  gtag('config', 'G-TU_ID_REAL');
 </script>
-{{ end }}
-{{ end }}
